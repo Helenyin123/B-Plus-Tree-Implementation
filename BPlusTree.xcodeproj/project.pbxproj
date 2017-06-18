@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		5E49B55D1EAFF0A300A02E10 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5E49B55C1EAFF0A300A02E10 /* main.cpp */; };
+		5E49B5661EB29EB200A02E10 /* BPlusTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5E49B5641EB29EB200A02E10 /* BPlusTree.cpp */; };
+		5E49B5871EB66F7100A02E10 /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = 5E49B5861EB66F7100A02E10 /* Makefile */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,9 @@
 /* Begin PBXFileReference section */
 		5E49B5591EAFF0A300A02E10 /* BPlusTree */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = BPlusTree; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E49B55C1EAFF0A300A02E10 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		5E49B5641EB29EB200A02E10 /* BPlusTree.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BPlusTree.cpp; sourceTree = "<group>"; };
+		5E49B5651EB29EB200A02E10 /* BPlusTree.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = BPlusTree.hpp; sourceTree = "<group>"; };
+		5E49B5861EB66F7100A02E10 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +63,9 @@
 			isa = PBXGroup;
 			children = (
 				5E49B55C1EAFF0A300A02E10 /* main.cpp */,
+				5E49B5641EB29EB200A02E10 /* BPlusTree.cpp */,
+				5E49B5651EB29EB200A02E10 /* BPlusTree.hpp */,
+				5E49B5861EB66F7100A02E10 /* Makefile */,
 			);
 			path = BPlusTree;
 			sourceTree = "<group>";
@@ -119,6 +127,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E49B5871EB66F7100A02E10 /* Makefile in Sources */,
+				5E49B5661EB29EB200A02E10 /* BPlusTree.cpp in Sources */,
 				5E49B55D1EAFF0A300A02E10 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -218,6 +228,8 @@
 		5E49B5611EAFF0A300A02E10 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_NO_COMMON_BLOCKS = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -225,6 +237,8 @@
 		5E49B5621EAFF0A300A02E10 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_NO_COMMON_BLOCKS = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -248,6 +262,7 @@
 				5E49B5621EAFF0A300A02E10 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
